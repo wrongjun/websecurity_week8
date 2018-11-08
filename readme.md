@@ -17,9 +17,13 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: SQL Injection (SQLi)
-
-Vulnerability #2: __________________
-
+    SQL injection was found on the blue site at salesperson.php?id=1. User can perform time delay attack to the database
+    by 
+    salesperson.php?id=1' or sleep(5)=1--'
+    
+    
+Vulnerability #2: Session Hijacking/Fixation
+    Session Hijacking was found on the blue site. The session id is different for differen browser and changed with each open and close. Since the all the website share the same session id for login, when user login in to other browser and get the session id, they can use this session id to login at other bworser without entering username and password.
 
 ## Green
 
