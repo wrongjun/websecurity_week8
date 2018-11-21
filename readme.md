@@ -55,12 +55,12 @@ Vulnerability #1: Insecure Direct Object Reference (IDOR)
       https://35.184.88.145/red/public/salesperson.php?id=X
     At the id x, we can input a number and direct us to the reference oject, but there are obect is secured and should not display to the public. There is not protected process to secure private information.
     <br />GIF Walkthrough: <br />
-    <img src="https://github.com/wrongjun/websecurity_week8/blob/master/red_csrf.gif" width="700">
+    <img src="https://github.com/wrongjun/websecurity_week8/blob/master/red_idor.gif" width="700">
 
 
 Vulnerability #2:Cross-Site Request Forgery (CSRF)
     Red site dont required CSRF token to perorm edition such as change saleperson and country. CSRF token is generated when admin was login, which mean attacker can edit the information without login as admin. They can perfrom attack through the usage of php.
-<br />GIF Walkthrough: <br /> <img src="https://github.com/wrongjun/websecurity_week8/blob/master/blue_sql.gif" width="700">
+<br />GIF Walkthrough: <br /> <img src="https://github.com/wrongjun/websecurity_week8/blob/master/red_csrf.gif" width="700">
 ## Resources
 -GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
